@@ -96,3 +96,17 @@ const checker = (arr) => {
     })
 }
 console.log(checker([2,4,6,8,10]))
+
+
+// Question 11
+const upperString = (arr) => {
+    let newString = arr.filter((el) =>{
+        if (typeof el === "string"){
+            return el
+        }
+    })
+    return newString.map((el) =>{
+        return el.toUpperCase()
+    })
+}
+console.log(upperString([{}, 1, "cat", 3, ["hi"], {name:"dog"}, "dog", "bear"]))
